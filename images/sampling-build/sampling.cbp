@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="sampling" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/Users/lsmon/Developer/qt/sampling/sampling-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/Users/lsmon/Developer/qt/sampling/sampling-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/Users/lsmon/Developer/qt/sampling/sampling-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sampling">
+         <Option output="/Users/lsmon/Developer/qt/sampling/sampling-build/sampling" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/lsmon/Developer/qt/sampling/sampling-build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/calib3d/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/core/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/features2d/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/flann/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/highgui/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/imgproc/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/legacy/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/objdetect/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/video/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 sampling" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sampling/fast">
+         <Option output="/Users/lsmon/Developer/qt/sampling/sampling-build/sampling" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/lsmon/Developer/qt/sampling/sampling-build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/calib3d/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/core/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/features2d/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/flann/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/highgui/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/imgproc/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/legacy/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/objdetect/include" />
+            <Add directory="/usr/local/Cellar/opencv/2.4.9/include/opencv2/video/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 sampling/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/lsmon/Developer/qt/sampling/sampling-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/Users/lsmon/Developer/qt/sampling/CustomOpenCV.cpp">
+      </Unit>
+      <Unit filename="/Users/lsmon/Developer/qt/sampling/SobelDemo.cpp">
+      </Unit>
+      <Unit filename="/Users/lsmon/Developer/qt/sampling/CustomOpenCV.h">
+      </Unit>
+      <Unit filename="/Users/lsmon/Developer/qt/sampling/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
