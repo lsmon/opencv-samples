@@ -3,70 +3,106 @@
 
 #include "CustomHeader.h"
 
-class SobelDerivativeDemo
+class CustomOpenCV
 {
 public:
     /**
-     * @brief SobelDerivativeDemo
+     * @brief CustomOpenCV
      */
-    SobelDerivativeDemo();
+    CustomOpenCV();
+
     /**
-     * @brief SobelDerivativeDemo
+     * @brief CustomOpenCV
      * @param filename
      */
-    SobelDerivativeDemo(string filename);
+    CustomOpenCV(string filename);
+
+    /**
+     * @brief ScharSobelDerivatives
+     */
+    void ScharSobelDerivatives();
+
+    /**
+     * @brief SobelScharDerivatives
+     */
+    void SobelScharDerivatives();
+
     /**
      * @brief SobelDerivatives
      * @param filename
      */
     void SobelDerivatives();
+
     /**
-     * @brief SetSobelScale
+     * @brief ScharDerivatives
+     */
+    void ScharDerivatives();
+
+    /**
+     * @brief ShowMat
+     */
+    void ShowMat();
+
+    /**
+     * @brief SetScale
      * @param scale
      */
-    void SetSobelScale(int scale);
+    void SetScale(int scale);
+
     /**
-     * @brief SetSobleDelta
+     * @brief SetDelta
      * @param delta
      */
-    void SetSobleDelta(int delta);
+    void SetDelta(int delta);
+
     /**
-     * @brief SetSobleDDepth
+     * @brief SetDDepth
      * @param ddepth
      */
-    void SetSobleDDepth(int ddepth);
+    void SetDDepth(int ddepth);
+
     /**
      * @brief SetFileName
      * @param filename
      */
     void SetFileName(string filename);
+
     /**
-     * @brief GetSobelScale
+     * @brief GetScale
      * @return
      */
-    int GetSobelScale();
+    int GetScale();
+
     /**
-     * @brief GetSobelDelta
+     * @brief GetDelta
      * @return
      */
-    int GetSobelDelta();
+    int GetDelta();
+
     /**
-     * @brief GetSobleDDepth
+     * @brief GetDDepth
      * @return
      */
-    int GetSobleDDepth();
+    int GetDDepth();
+
     /**
      * @brief GetFileName
      * @return
      */
     string GetFileName();
+
 private:
+    /**
+     * @brief init
+     */
     void init();
+
     /**
      * @brief readDataFailFrom
      * @param filename
      */
     void readDataFailFrom();
+
     /**
      * @brief convertToGray
      * @param src
@@ -74,12 +110,19 @@ private:
      * @param code [ie:CV_RGB2GRAY]
      */
     void convertToGray();
+
+    /**
+     * @brief convertToGray
+     * @param code
+     */
     void convertToGray(int code);
+
     /**
      * @brief CustomOpenCV::createWindow
      * @param windowSizeFlag [ie:CV_WINDOW_NORMAL]
      */
     void createWindow(int windowSizeFlag);
+
     /**
      * @brief CustomOpenCV::sobelGradientX
      * @param src_gray
@@ -87,6 +130,7 @@ private:
      * @param borderType [ie: BORDER_DEFAULT]
      */
     void sobelGradientX(Mat src_gray, Mat grad_x, int borderType);
+
     /**
      * @brief CustomOpenCV::sobelGradientY
      * @param src_gray
@@ -94,6 +138,7 @@ private:
      * @param borderType [ie: BORDER_DEFAULT]
      */
     void sobelGradientY(Mat src_gray, Mat grad_y, int borderType);
+
     /**
      * @brief CustomOpenCV::gradientApproximation
      * @param alpha [Default=0.5]
@@ -102,6 +147,22 @@ private:
      * @param dtype [Default=-1]
      */
     void gradientApproximation(double alpha=0.5, double beta=0.5, double gamma=0);
+
+    /**
+     * @brief scharGradientX
+     * @param src_gray
+     * @param grad_x
+     * @param borderType [ie: BORDER_DEFAULT]
+     */
+    void scharGradientX(Mat src_gray, Mat grad_x, int borderType);
+
+    /**
+     * @brief scharGradientY
+     * @param src_gray
+     * @param grad_y
+     * @param borderType [ie: BORDER_DEFAULT]
+     */
+    void scharGradientY(Mat src_gray, Mat grad_y, int borderType);
 
     Mat src;
     Mat src_gray;

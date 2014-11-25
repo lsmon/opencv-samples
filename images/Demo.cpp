@@ -12,8 +12,11 @@ int main(int argc, const char** argv)
         filename = argv[1];
     }
 
-    SobelDerivativeDemo *demo = new SobelDerivativeDemo(filename);
+    CustomOpenCV *demo = new CustomOpenCV(filename);
     demo->SobelDerivatives();
+    demo->ScharDerivatives();
+    demo->ScharSobelDerivatives();
+    demo->SobelScharDerivatives();
     waitKey();
     return 0;
 }

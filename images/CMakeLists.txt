@@ -199,7 +199,8 @@ set (SAMPLES_VERSION_MINOR 0)
 
 if(${CMAKE_SYSTEM_NAME} STREQUAL Darwin)
         set(SOBEL_DERIVATIVES_DEMO_SOURCES
-                SobelDemo.cpp
+                CustomHeader.h
+                Demo.cpp
                 CustomOpenCV.cpp
         )
         set(COMMON_LIBRARIES
