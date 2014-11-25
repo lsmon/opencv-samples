@@ -11,7 +11,6 @@ CustomOpenCV::CustomOpenCV(string filename)
 }
 
 void CustomOpenCV::SobelScharDerivatives(){
-    src = imread(this->GetFileName());
     if (!src.data){
         this->readDataFailFrom();
     }
@@ -38,7 +37,6 @@ void CustomOpenCV::SobelScharDerivatives(){
 }
 
 void CustomOpenCV::ScharSobelDerivatives(){
-    src = imread(this->GetFileName());
     if (!src.data){
         this->readDataFailFrom();
     }
@@ -65,7 +63,6 @@ void CustomOpenCV::ScharSobelDerivatives(){
 }
 
 void CustomOpenCV::SobelDerivatives(){
-    src = imread(this->GetFileName());
     if (!src.data){
         this->readDataFailFrom();
     }
@@ -86,7 +83,6 @@ void CustomOpenCV::SobelDerivatives(){
 }
 
 void CustomOpenCV::ScharDerivatives(){
-    src = imread(this->GetFileName());
     if (!src.data){
         this->readDataFailFrom();
     }
@@ -167,6 +163,7 @@ string CustomOpenCV::GetFileName(){
 
 void CustomOpenCV::SetFileName(string filename){
     this->filename = filename;
+    src = imread(this->GetFileName());
 }
 
 void CustomOpenCV::convertToGray(){
